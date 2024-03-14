@@ -1,7 +1,6 @@
 import express from "express";
-import testFunction from "../controller/testController.js";
-import getAllUsers from "../controller/testController.js";
-import createUser from "../controller/testController.js";
+import { createUser, getAllUsers } from "../controller/testController.js";
+
 // import { createUser, testFunction } from "../controller/testController.js";
 
 const testRouter = express.Router();

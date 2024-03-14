@@ -28,4 +28,4 @@ const createUser = async (req, res) => {
   res.status(200).json({ userbody });
 };
 
-export { getAllUsers, createUser };
+const abc = () => {};

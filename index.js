@@ -5,6 +5,7 @@ import express from "express";
 import cors from "cors";
 import mongoose from "mongoose";
 import testRouter from "./router/testRouter.js";
+import fakeRouter from "./router/fakeRouter.js";
 
 const app = express();
 app.use(express.json());
@@ -35,6 +36,8 @@ mongoose
   .catch((err) => console.log(err));
 
 app.use("/api/test", testRouter);
+//1st : create and entry point for all the routes related with that resource
+app.use("/api/fake", fakeRouter);
 
 app.get("/", (req, res) => {
   res.send("Hello World!");
