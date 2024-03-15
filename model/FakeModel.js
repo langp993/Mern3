@@ -7,6 +7,16 @@ const fakeSchema = new mongoose.Schema({
   age: {
     type: Number,
   },
+
+  email: {
+    type: String,
+    required: true,
+    unique: true,
+  },
+  password: {
+    type: String,
+    required: true,
+  },
 });
 
 const FakeModel = mongoose.model("fake", fakeSchema);

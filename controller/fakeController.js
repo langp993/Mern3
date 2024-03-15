@@ -27,6 +27,9 @@ const createFakeDocument = async (req, res) => {
   const newDocument = new FakeModel({
     name: req.body.name,
     age: req.body.age,
+
+    email: req.body.email,
+    password: req.body.password,
   });
 
   //! DO NOT FORGET TO PUT ALL YOUR ASYNC CODE INSIDE A TRy/CATCH, and send response in case of a bad request
